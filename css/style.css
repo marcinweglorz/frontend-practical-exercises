@@ -1,23 +1,55 @@
 body {
-    font-family: 'Comfortaa', cursive;
-    background-color: #333;
-    font-size: 36px;
-    color: #fff;
+	font-family: 'Comfortaa', cursive;
+	background-color: #333;
+	font-size: 36px;
+	color: #fff;
 }
 
-div p {
-    color: tomato;
+img {
+	width: 800px;
+	border-radius: 25px;
+	display: block;
+	margin: 0 auto;
 }
 
-.child > p {
-    text-decoration: line-through;
-    font-weight: bold;
+div {
+	color: lime;
 }
 
-#test ~ div {
-    background-color: blue;
+span {
+	color: tomato;
+	text-decoration: underline;
 }
 
-main + p {
-    text-transform: uppercase;
+.box-1 {
+	width: 400px;
+	height: 400px;
+	background-color: gold;
+}
+
+.circle {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: rgb(255, 0, 0, 0.3);
+}
+
+.box-2 {
+    max-width: 800px;
+    min-width: 500px;
+    width: 100%;
+    height: 200px;
+    background-color: lime;
+}
+
+.box-3 {
+    width: 50vw;
+    height: 300px;
+    background-color: tomato;
+}
+
+.inside {
+    width: 50%;
+    height: 50vw;
+    background-color: #0076e8;
 }
