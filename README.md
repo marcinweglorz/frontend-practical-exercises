@@ -43,3 +43,5 @@ Pod DIVem stwórz uporządkowaną listę i wypisz w niej 5 Twoich ulubionych pot
 
 13: DIV .inside ma mieć połowę szerokości swojego rodzica, wysokość ma wynosić połowę szerokości viewportu, kolor ma być taki sam jak kolor 
 nagłówka strony: MMCschool.pl
+
+Koniec pierwszej części zadań.
