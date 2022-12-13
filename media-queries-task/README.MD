@@ -7,4 +7,4 @@ MEDIA QUERIES QUICK TASKS:
 600 px - 800 px - strona ma być koloru tomato
 
 
-Szybkie praktyczne zadania na nauke działania media queries w css.
+Szybkie praktyczne zadania na nauke działania media queries.

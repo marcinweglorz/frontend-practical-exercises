@@ -1,37 +1,36 @@
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 body {
-	font-family: 'Montserrat', sans-serif;
-	background-color: #333;
-	font-size: 48px;
-
+  font-family: "Montserrat", sans-serif;
+  background-color: #333;
+  font-size: 48px;
 }
 
 p {
-    display: none;
+  display: none;
 }
 
 @media (min-width: 200px) {
-    body {
-        background-color: gold;
-    }
+  body {
+    background-color: gold;
+  }
 }
 @media (min-width: 400px) {
-    body {
-        background-color: royalblue;
-    }
+  body {
+    background-color: royalblue;
+  }
 }
 
 @media (min-width: 600px) {
-    body {
-        background-color: tomato;
-    }
+  body {
+    background-color: tomato;
+  }
 }
 
 p {
-    display: block;
+  display: block;
 }
