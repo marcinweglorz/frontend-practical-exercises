@@ -1,4 +1,4 @@
-MEDIA QUERIES TASKS:
+MEDIA QUERIES QUICK TASKS:
 
 200 px - 400 px - strona ma byc złota
 
