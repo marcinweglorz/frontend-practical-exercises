@@ -1,0 +1,80 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  color: #fff;
+  background-color: #333;
+}
+
+div {
+  height: 300px;
+  width: 300px;
+}
+
+.circle {
+  background-color: lime;
+  border-radius: 50%;
+  -webkit-animation: animation2 2s 4s;
+          animation: animation2 2s 4s;
+}
+
+.square {
+  background-color: tomato;
+  -webkit-animation: animation1 4s forwards;
+          animation: animation1 4s forwards;
+}
+
+@-webkit-keyframes animation1 {
+  0% {
+    height: 300px;
+    width: 300px;
+    background-color: tomato;
+  }
+  50% {
+    width: 600px;
+    height: 300px;
+  }
+  100% {
+    width: 300px;
+    height: 600px;
+    background-color: gold;
+  }
+}
+
+@keyframes animation1 {
+  0% {
+    height: 300px;
+    width: 300px;
+    background-color: tomato;
+  }
+  50% {
+    width: 600px;
+    height: 300px;
+  }
+  100% {
+    width: 300px;
+    height: 600px;
+    background-color: gold;
+  }
+}
+@-webkit-keyframes animation2 {
+  from {
+    background-color: lime;
+  }
+  to {
+    background-color: royalblue;
+  }
+}
+@keyframes animation2 {
+  from {
+    background-color: lime;
+  }
+  to {
+    background-color: royalblue;
+  }
+}/*# sourceMappingURL=style.css.map */
