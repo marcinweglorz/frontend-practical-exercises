@@ -27,4 +27,4 @@ if (numbers.length > 5) {
 
 //zadanie 5
 
-console.log(`Tablica z cyframi ma ${numbersLength} elementów.`);
+console.log(`Tablica z cyframi ma ${numbers.length} elementów.`);
