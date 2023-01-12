@@ -19,15 +19,14 @@ body {
 }
 
 ul {
-  position: absolute;
-  right: 70px;
   display: flex;
   justify-content: space-around;
+  right: 50px;
   list-style: none;
 }
 ul a {
   padding: 10px;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   text-decoration: none;
   color: white;
   letter-spacing: 2px;
@@ -41,6 +40,7 @@ ul a {
   border: none;
   background: transparent;
   cursor: pointer;
+  display: none;
 }
 
 .lines {
@@ -50,4 +50,35 @@ ul a {
   margin: 0.7em;
   border-radius: 20px;
   transition: 0.3s ease-in-out;
+}
+
+@media only screen and (max-width: 1000px) {
+  .burger {
+    display: block;
+    transition: 0.3s ease-in-out;
+  }
+  ul {
+    position: absolute;
+    right: 0;
+    top: 8vh;
+    width: 50%;
+    text-align: center;
+    height: 92vh;
+    background: rgb(37, 155, 173);
+    flex-direction: column;
+    transform: translate(100%);
+    transition: 0.3s;
+  }
+  ul.active {
+    transform: translate(0px);
+  }
+  a {
+    font-size: 2.5em;
+    letter-spacing: 2px;
+  }
+}
+@media only screen and (max-width: 760px) {
+  ul {
+    width: 100%;
+  }
 }/*# sourceMappingURL=style.css.map */
