@@ -1,0 +1,58 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: gray;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 10px;
+}
+
+// Nav Styling
+
+.nav-menu {
+	position: relative;
+	display: flex;
+	justify-content: flex-end;
+	padding: 1em;
+	height: 7vh;
+}
+
+ul {
+	position: absolute;
+	right: 70px;
+	display: flex;
+	justify-content: space-around;
+	list-style: none;
+
+	a {
+		padding: 10px;
+		font-size: 1.5rem;
+		text-decoration: none;
+		color: white;
+		letter-spacing: 2px;
+	}
+}
+
+// Burger Styling
+
+.burger {
+	top: 0;
+	right: 0;
+	position: absolute;
+	outline: none;
+	border: none;
+	background: transparent;
+	cursor: pointer;
+}
+
+.lines {
+	background: black;
+	width: 3em;
+	height: 0.3em;
+	margin: 0.7em;
+	border-radius: 20px;
+	transition: 0.3s ease-in-out;
+}
