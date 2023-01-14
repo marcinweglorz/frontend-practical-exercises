@@ -68,13 +68,13 @@ body {
 	}
 
 	.link:hover::before {
-		border-left: 2px solid white;
-		border-top: 2px solid white;
+		border-left: 1px solid white;
+		border-top: 1px solid white;
 	}
 
 	.link:hover::after {
-		border-right: 2px solid white;
-		border-bottom: 2px solid white;
+		border-right: 1px solid white;
+		border-bottom: 1px solid white;
 	}
 }
 
