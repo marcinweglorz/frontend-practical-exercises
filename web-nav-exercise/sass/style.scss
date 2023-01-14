@@ -10,12 +10,6 @@ body {
 	background-image: linear-gradient(to right, #243949 0%, #517fa4 100%);
 }
 
-.navigation {
-	height: 50px;
-	width: 100vw;
-	position: relative;
-}
-
 .navigation-list {
 	display: flex;
 	justify-content: flex-end;
@@ -81,15 +75,16 @@ body {
 .burger {
 	position: absolute;
 	width: 35px;
-	height: 30px;
+	height: 35px;
 	right: 0px;
 	top: 0px;
 	padding: 0px 60px;
+	margin: 10px;
 	background: transparent;
 	border: none;
 	cursor: pointer;
 	outline: none;
-	// display: none;
+	display: none;
 
 	.lines {
 		background: black;
@@ -107,8 +102,22 @@ body {
 	}
 
 	.navigation-list {
-		position: absolute;
 		right: 0;
-		transform: translateX(1000px);
+		width: 50%;
+		height: 8vh;
+		text-align: center;
+		flex-direction: column;
+		opacity: 0;
+	}
+
+	.navigation-list.active {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		opacity: 1;
+		width: 100%;
+		height: 100vh;
+		text-align: center;
+		background-color: gray;
 	}
 }
