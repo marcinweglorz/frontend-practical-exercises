@@ -98,6 +98,7 @@ body {
     text-align: center;
     flex-direction: column;
     opacity: 0;
+    transition: 0.3s;
   }
   .navigation-list.active {
     display: flex;
@@ -108,5 +109,8 @@ body {
     height: 100vh;
     text-align: center;
     background-color: gray;
+  }
+  a {
+    padding: 30px;
   }
 }/*# sourceMappingURL=style.css.map */
