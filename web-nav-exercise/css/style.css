@@ -57,12 +57,12 @@ body {
   height: 30px;
 }
 .navigation-list .link:hover::before {
-  border-left: 1px solid white;
-  border-top: 1px solid white;
+  border-left: 0.5px solid white;
+  border-top: 0.5px solid white;
 }
 .navigation-list .link:hover::after {
-  border-right: 1px solid white;
-  border-bottom: 1px solid white;
+  border-right: 0.5px solid white;
+  border-bottom: 0.5px solid white;
 }
 
 .burger {
