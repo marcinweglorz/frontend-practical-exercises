@@ -85,7 +85,7 @@ nav .nav-list li .nav-text:hover::after {
   height: 30px;
   position: relative;
 }
-.hamburger .hamburger__box .hamburger__lines {
+.hamburger .hamburger__lines {
   position: absolute;
   display: inline-block;
   background-color: black;
@@ -95,8 +95,8 @@ nav .nav-list li .nav-text:hover::after {
   top: 50%;
   transform: translateY(-50%);
 }
-.hamburger .hamburger__box .hamburger__lines::before,
-.hamburger .hamburger__box .hamburger__lines::after {
+.hamburger .hamburger__lines::before,
+.hamburger .hamburger__lines::after {
   content: "";
   position: absolute;
   display: inline-block;
@@ -105,10 +105,23 @@ nav .nav-list li .nav-text:hover::after {
   width: 100%;
   right: 0;
   top: 50%;
+  transition: transform 0.2s ease-in-out;
 }
-.hamburger .hamburger__box .hamburger__lines::before {
+.hamburger .hamburger__lines::before {
   top: -10px;
 }
-.hamburger .hamburger__box .hamburger__lines::after {
+.hamburger .hamburger__lines::after {
   top: 10px;
+}
+
+.hamburger--active .hamburger__lines {
+  background-color: transparent;
+}
+
+.hamburger--active .hamburger__lines::before {
+  transform: translateY(10px) rotate(45deg);
+}
+
+.hamburger--active .hamburger__lines::after {
+  transform: translateY(-10px) rotate(-45deg);
 }/*# sourceMappingURL=style.css.map */
