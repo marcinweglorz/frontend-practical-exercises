@@ -7,131 +7,119 @@
 body {
 	font-family: 'Montserrat', sans-serif;
 	font-size: 10px;
-	background-image: linear-gradient(to right, #243949 0%, #517fa4 100%);
+	height: 100vh;
+	width: 100vw;
+	background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
 }
 
-.navigation-list {
+nav {
 	display: flex;
-	justify-content: flex-end;
+	justify-content: space-between;
 	align-items: center;
-	list-style: none;
-
-	.link {
-		position: relative;
-		padding: 20px 40px;
-		font-weight: bold;
-		top: 15px;
-		right: 20px;
-		text-decoration: none;
-		font-size: 1.8em;
-		letter-spacing: 2px;
-		color: black;
-		text-transform: uppercase;
-	}
-
-	.link::before,
-	.link::after {
-		content: '';
-		position: absolute;
-		width: 0;
-		height: 0;
-		transition: 0.4s;
-	}
-
-	.link::before {
-		left: 20px;
-		top: 10px;
-		border-left: 0px solid white;
-		border-top: 0px solid white;
-	}
-
-	.link::after {
-		right: 20px;
-		bottom: 10px;
-		border-right: 0px solid white;
-		border-bottom: 0px solid white;
-	}
-
-	.link:hover {
-		color: white;
-	}
-
-	.link:hover::before,
-	.link:hover::after {
-		width: 30px;
-		height: 30px;
-	}
-
-	.link:hover::before {
-		border-left: 0.5px solid white;
-		border-top: 0.5px solid white;
-	}
-
-	.link:hover::after {
-		border-right: 0.5px solid white;
-		border-bottom: 0.5px solid white;
-	}
-}
-
-.burger {
-	position: absolute;
-	width: 35px;
-	height: 35px;
-	right: 0px;
-	top: 0px;
-	padding: 0px 60px;
 	margin: 10px;
-	background: transparent;
-	border: none;
-	cursor: pointer;
-	outline: none;
-	display: none;
 
-	.lines {
-		background: black;
-		width: 3em;
-		height: 0.3em;
-		margin: 0.7em;
-		border-radius: 20px;
-	}
-}
-
-@media only screen and (max-width: 1000px) {
-	.burger {
-		display: block;
-		transition: 0.3s ease-in-out;
-	}
-
-	.navigation-list {
+	.nav-list {
+		list-style: none;
 		display: flex;
-		justify-content: center;
-		align-items: center;
-		flex-direction: column;
-		width: 100vw;
-		height: 100vh;
-		opacity: 0;
-		transition: 0.5s;
 
-		.link {
-			display: flex;
-			font-size: 20px;
-			margin: 20px;
+		li {
+			margin: 0 30px;
+			text-align: center;
+
+			.nav-text {
+				position: relative;
+				font-size: 1.7em;
+				text-decoration: none;
+				color: white;
+			}
+
+			.nav-text::before,
+			.nav-text::after {
+				content: '';
+				position: absolute;
+				width: 0;
+				height: 0;
+				transition: 0.3s;
+			}
+
+			.nav-text::before {
+				top: -5px;
+				left: -10px;
+				border-top: 0px solid white;
+				border-left: 0px solid white;
+			}
+
+			.nav-text::after {
+				bottom: -5px;
+				right: -10px;
+				border-bottom: 0px solid white;
+				border-right: 0px solid white;
+			}
+
+			.nav-text:hover::before,
+			.nav-text:hover::after {
+				width: 20px;
+				height: 20px;
+			}
+			.nav-text:hover::before {
+				border-top: 1px solid white;
+				border-left: 1px solid white;
+			}
+
+			.nav-text:hover::after {
+				border-bottom: 1px solid white;
+				border-right: 1px solid white;
+			}
 		}
 	}
-
-	.navigation-list.active {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		opacity: 1;
-		width: 100%;
-		height: 100vh;
-		text-align: center;
-		background-color: gray;
-	}
 }
 
-@media only screen and (max-width: 844px) {
-	.navigation-list {
+.logo {
+	font-size: 1.7em;
+	color: white;
+	text-shadow: 2px 2px 2px #09203f;
+}
+
+.hamburger {
+	display: inline-block;
+	cursor: pointer;
+	background-color: transparent;
+	border: none;
+	margin: 0;
+
+	.hamburger__box {
+		display: inline-block;
+		width: 30px;
+		height: 30px;
+		position: relative;
+
+		.hamburger__lines {
+			position: absolute;
+			display: inline-block;
+			background-color: black;
+			height: 3px;
+			width: 100%;
+			right: 0;
+			top: 50%;
+			transform: translateY(-50%);
+		}
+		.hamburger__lines::before,
+		.hamburger__lines::after {
+			content: '';
+			position: absolute;
+			display: inline-block;
+			background-color: black;
+			height: 3px;
+			width: 100%;
+			right: 0;
+			top: 50%;
+		}
+		.hamburger__lines::before {
+			top: -10px;
+		}
+
+		.hamburger__lines::after {
+			top: 10px;
+		}
 	}
 }
