@@ -133,3 +133,24 @@ nav {
 .hamburger--active .hamburger__lines::after {
 	transform: translateY(-10px) rotate(-45deg);
 }
+
+@media only screen and (max-width: 1200px) {
+	.hamburger {
+		display: block;
+	}
+
+	.nav-list {
+		display: flex;
+		position: absolute;
+		top: 40px;
+		right: 0;
+		width: 50%;
+		height: 100%;
+		flex-direction: column;
+		background-color: aqua;
+
+		.nav-text {
+			display: inline-block;
+		}
+	}
+}
