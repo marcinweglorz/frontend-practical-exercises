@@ -148,9 +148,11 @@ nav {
 		height: 100%;
 		flex-direction: column;
 		background-color: aqua;
+		transform: translate(1000%);
+		transition: transform 0.3s ease-in-out;
+	}
 
-		.nav-text {
-			display: inline-block;
-		}
+	.nav-list--active {
+		transform: translate(0);
 	}
 }
