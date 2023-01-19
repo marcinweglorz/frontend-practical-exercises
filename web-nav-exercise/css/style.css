@@ -7,8 +7,8 @@
 body {
   font-family: "Montserrat", sans-serif;
   font-size: 10px;
+  width: 100%;
   height: 100vh;
-  width: 100vw;
   background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
 }
 
@@ -127,22 +127,28 @@ nav .nav-list li .nav-text:hover::after {
 }
 
 @media only screen and (max-width: 1200px) {
-  .hamburger {
+  .hamburger__box {
     display: block;
   }
   .nav-list {
-    display: flex;
+    opacity: 0;
     position: absolute;
     top: 40px;
     right: 0;
     width: 50%;
-    height: 100%;
+    height: 96%;
     flex-direction: column;
-    background-color: aqua;
-    transform: translate(1000%);
-    transition: transform 0.3s ease-in-out;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    background-color: rgba(141, 141, 141, 0.5);
+    transition: opacity 0.3s ease-in-out;
   }
   .nav-list--active {
-    transform: translate(0);
+    opacity: 1;
+  }
+}
+@media only screen and (max-width: 760px) {
+  .nav-list {
+    width: 100%;
   }
 }/*# sourceMappingURL=style.css.map */
