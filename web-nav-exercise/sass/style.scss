@@ -95,7 +95,7 @@ nav {
 	}
 	.hamburger__lines {
 		position: absolute;
-		display: inline-block;
+		display: none;
 		background-color: black;
 		height: 3px;
 		width: 100%;
@@ -135,8 +135,10 @@ nav {
 }
 
 @media only screen and (max-width: 1200px) {
-	.hamburger__box {
-		display: block;
+	.hamburger {
+		.hamburger__lines {
+			display: inline-block;
+		}
 	}
 
 	.nav-list {
