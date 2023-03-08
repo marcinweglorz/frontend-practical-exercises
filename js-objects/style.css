@@ -1,0 +1,33 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+:root {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rebeccapurple;
+	height: 100vh;
+}
+
+.buttons {
+	padding: 20px 40px;
+	margin: 20px;
+	cursor: pointer;
+	background: none;
+	color: #fff;
+	font-size: 18px;
+	border: 3px solid #ddd;
+	border-radius: 8px;
+	transition: 0.3s;
+	text-transform: uppercase;
+}
+
+.button:hover {
+	background-color: #fff;
+	color: #000;
+}
