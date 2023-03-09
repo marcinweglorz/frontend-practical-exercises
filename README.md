@@ -1,3 +1,3 @@
-Podstawowe jak i bardziej zaawansowane zadania dzięki którym rozwijam swoje umiejętności z HTML, CSS, SASS, JS.
+Basic and advanced tasks to develop my HTML, CSS, SASS, JS skills.
 
-Repozytorium będzie aktualizowane regularnie o kolejne zadania.
+The repository will be updated regularly with new tasks.
