@@ -3,11 +3,11 @@ function Person(name, age) {
 	this.age = age
 }
 
-Persone.prototype.sayHi = function () {
+Person.prototype.sayHi = function () {
 	console.log(`Cześć, jestem ${this.name}.`)
 }
 
-Persone.prototype.showAge = function () {
+Person.prototype.showAge = function () {
 	console.log(`Mam ${this.age} lat.`)
 }
 
